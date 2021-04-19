@@ -1,4 +1,18 @@
-// Define class here
+// Define class here 
 
+ class HTMLElement {
+  constructor(tag, content) {
+    this.tag = tag;
+    this.content = content;
+  }
+
+  render() {
+    return (`<${this.tag}> ${this.content} </${this.tag}> `);
+  }
+}
+
+const lovelaceQuote = new HTMLElement("p", "I am never so happy as when I am  now");
+
+console.log(lovelaceQuote.render());
 // Export class here
-export default {};
+export default HTMLElement ;
