@@ -1,15 +1,15 @@
 // Import HTMLElement here
-import HTMLElement from "./rolodex/HTMLElement.js";
+import HTMLElement from './HTMLElement.js';
 // Define class here ...
 class DivElement extends HTMLElement {
   constructor(content) {
     super(content);
     this.content = content;
-    this.tag = "div";
+    this.tag = 'div';
   }
 }
 // Export class here
 
-const divexp1 = new DivElement("What a wonderfull world Julio ");
+const divexp1 = new DivElement('What a wonderfull world Julio ');
 
 console.log(divexp1.render());
